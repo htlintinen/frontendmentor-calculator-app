@@ -1,0 +1,23 @@
+.screen {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border-radius: 10px;
+  background-color: var(--color-screen-background);
+  color: var(--color-text);
+  min-height: 85px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+p {
+  flex: 1;
+  display: block;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  text-align: right;
+  color: white;
+  font-size: 32px;
+  margin: 27px 20px;
+}

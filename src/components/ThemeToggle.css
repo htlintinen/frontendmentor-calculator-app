@@ -1,0 +1,46 @@
+.themetoggle {
+  align-content: flex-end;
+  vertical-align: middle;
+}
+
+.themetoggle table {
+  table-layout: fixed;
+  align-self: flex-end;
+  border-spacing: 0px;
+  color: white;
+  font-size: 0.75rem;
+  transform: translateY(25%);
+}
+
+.themetoggle tr {
+  width: 200px;
+}
+
+.themetoggle td {
+  width: 23px;
+  height: 23px;
+}
+
+.td1 {
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  background-color: var(--color-keypad-background);
+}
+
+.td2 {
+  background-color: var(--color-keypad-background);
+}
+
+.td3 {
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  background-color: var(--color-keypad-background);
+}
+
+.selected {
+  border-radius: 30px;
+  background-color: var(--color-equals-key);
+  width: 65%;
+  height: 65%;
+  margin: 0 auto;
+}
