@@ -1,14 +1,13 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import ScreenContext from "../contexts/ScreenContext";
 import "./Screen.css";
 
-export interface ScreenProps {
-  value: string | undefined;
-}
+const Screen: FC = () => {
+  const { screenValue } = useContext(ScreenContext);
 
-const Screen: FC<ScreenProps> = ({ value }) => {
   return (
     <div className="screen">
-      <p>{value}</p>
+      <p>{screenValue}</p>
     </div>
   );
 };

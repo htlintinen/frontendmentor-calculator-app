@@ -1,17 +1,17 @@
 import { FC } from "react";
 import "./ThemeToggle.css";
 
-export enum Themes {
+export enum Theme {
   Theme1 = 1,
   Theme2 = 2,
   Theme3 = 3,
 }
 
 export interface ThemeToggleProps {
-  theme: Themes;
+  theme: Theme;
 }
 
-const ThemeToggle: FC<ThemeToggleProps> = () => {
+const ThemeToggle: FC<ThemeToggleProps> = ({ theme }) => {
   return (
     <div className="themetoggle">
       <table>
@@ -22,13 +22,13 @@ const ThemeToggle: FC<ThemeToggleProps> = () => {
         </tr>
         <tr className="secondrow">
           <td className="td1">
-            <div className="selected"></div>
+            <div className={theme === Theme.Theme1 ? "selected" : ""}></div>
           </td>
           <td className="td2">
-            <div></div>
+            <div className={theme === Theme.Theme2 ? "selected" : ""}></div>
           </td>
           <td className="td3">
-            <div></div>
+            <div className={theme === Theme.Theme3 ? "selected" : ""}></div>
           </td>
         </tr>
       </table>
